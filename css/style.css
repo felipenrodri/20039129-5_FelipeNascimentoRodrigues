@@ -1,0 +1,293 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Bahnschrift SemiBold Condensed', sans-serif;
+}
+
+body {
+  background-color: #fadad7e8;
+}
+
+img {
+  display: block; 
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.btn {
+  font-size: 18px;
+  background-color: #fa4f00;
+  display: block;
+  max-width: 140px;
+  text-align: center;
+  color: #ffffff;
+  padding: 8px;
+  letter-spacing: 1px;
+  border-radius: 8px;
+  margin-top: 32px;
+  border-bottom: 3px solid #fa4f00;
+  transition: all .3s;
+
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 10px 10px rgba(208, 29, 38, 0.16), 0px 8.13971px 10.25px rgba(208, 29, 38, 0.11), 0px 3.38082px 4.25733px rgba(208, 29, 38, 0.07), 0px 1.22278px 1.53979px rgba(208, 29, 38, 0.47);
+}
+
+.btn-comprar {
+  border-bottom: 3px solid #fa4f00;
+}
+
+.title {
+  font-family: 'Forte', cursive;
+  font-size: 64px;
+  color: #fa4f00;
+  text-align: center;
+  margin-top: 92px;
+}
+
+
+/*  NAVIGATION  */
+
+.top-page {
+  background-color: #fa4f00;
+  padding: 4px 0;
+}
+
+.top-page .container {
+  display: flex;
+}
+
+.top-page p {
+  font-size: 12px;
+  margin-right: 16px;
+}
+
+.logo {
+  width: 150px;
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #9f9f9f;
+  padding: 16px
+}
+
+.navigation-list {
+  display: flex;
+}
+
+.navigation-list li a{
+  margin: 0 8px;
+  padding: 8px;
+  color: #fa4f00;
+  font-weight: 500;
+  transition: transform .3s;
+  border-bottom: 3px solid transparent;
+  border-radius: 8px;
+}
+
+.navigation-list li a:hover {
+  color: #fa4f00;
+  border-bottom: 3px solid #fa4f00;
+  box-shadow: 0px 10px 10px rgba(246, 139, 38, 0.16), 0px 8.13971px 10.25px rgba(246, 139, 155, 0.11), 0px 3.38082px 4.25733px rgba(246, 139, 155, 0.07), 0px 1.22278px 1.53979px rgba(246, 139, 155, 0.47);
+  transform: scale(1.1);
+}
+
+/* BANNER */
+
+.banner {
+  background: url('../images/banner.jpg') center center no-repeat;
+  background-size: cover;
+  height: 400px;
+}
+
+.banner .container {
+  height: 100%;
+}
+
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.banner-title {
+  font-size: 50px;
+  max-width: 750px;
+  color: #F6EDEF;
+}
+
+
+/* PRODUTOS */
+
+.produtos {
+  position: relative;
+  z-index: 999;
+}
+
+.bg-produtos {
+  position: absolute;
+  max-width: 110%;
+  margin-top: 100px;
+}
+
+.produtos-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 126px;
+}
+
+.produto-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  margin-bottom: 40px;
+}
+
+.produto-titulo {
+  font-size: 24px;
+  margin-top: 8px;
+}
+
+.produto-item .preco {
+  font-size: 18px;
+  color: #4f4f4f;
+}
+
+.produto-item span {
+  font-size: 12px;
+}
+
+/* QUEM SOMOS */
+
+.quem-somos-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 126px;
+
+}
+.quem-somos-content p{
+  max-width: 800px;
+  color: #4f4f4f;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.quem-somos-dados .img {
+  margin-top: 150px;
+}
+
+
+/* CONTATO */
+
+.contato-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 126px;
+}
+
+.contato-mapa {
+  max-width: 900px;
+}
+
+.contato-mapa .img {
+  cursor: pointer;
+}
+
+.mapa-chamada {
+  font-family: 'Brush Script MT', cursive;
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+.contato-titulo {
+  font-size: 24px;
+  color: #D01D26;
+}
+
+.contato-item {
+  margin-bottom: 32px;
+}
+
+.contato-item p {
+  color: #3f3f3f;
+  margin-bottom: 8px;
+}
+
+.contato-redes {
+  display: flex;
+}
+
+.contato-redes .img {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 8px;
+  margin-right: 16px;
+  width: 30px;
+  cursor: pointer;
+}
+
+
+/* FOOTER */
+
+.footer {
+  margin-top: 126px;
+  background-color: #fa4f00;
+  text-align: center;
+  padding: 16px 0;
+}
+
+
+/* PÁGINA PRODUTO */
+
+.pagina-produto {
+  display: flex;
+  margin-top: 126px;
+}
+
+.info-produto {
+  margin-left: 64px;
+}
+
+.info-titulo-produto {
+  font-family: 'Brush Script MT', cursive;
+  font-size: 64px;
+  color: #fa4f00;
+  margin-bottom: 16px;
+}
+
+.info-preco-produto {
+  font-size: 32px;
+  color: #4f4f4f;
+  margin-top: 16px;
+}
+
+.info-ingredientes {
+  margin-top: 32px;
+}
+
+.lista-ingredientes li {
+  margin-top: 8px;
+}
